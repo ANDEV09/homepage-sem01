@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Maverick Dresses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        body {
+            font-family: 'Jost', sans-serif;
+        }
+    </style>
+</head>
+<body class="relative bg-white [&::-webkit-scrollbar]:w-2.5 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-black [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-black/60 [&::-webkit-scrollbar-thumb]:min-h-[30px] [&::-webkit-scrollbar-track]:my-2 [&::-webkit-scrollbar-thumb]:w-[1px] [&::-webkit-scrollbar-thumb]:mx-auto [&::-webkit-scrollbar-thumb]:border-l-[1px] [&::-webkit-scrollbar-thumb]:border-r-[1px] [&::-webkit-scrollbar-thumb]:border-black/40">
+    <div class="bg-[#FFF2EF] py-[0.625rem] w-full text-[0.8125rem]">
+        <div class="w-full max-w-[89.375rem] mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0">
+            <div class="hidden md:flex items-center space-x-4">
+                <div class="flex items-center space-x-2 w-auto md:w-[6.8106rem] h-[1.6875rem]">
+                    <img class="w-4 h-[1.0625rem]" src="https://project3.htuanqn.id.vn/assets/icon/phone.svg" alt="">
+                    <span class="ml-[-0.125rem] text-[#121212BF] font-light text-[0.9375rem]">0812665001</span>     
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img class="w-4 h-[1.0625rem]" src="https://project3.htuanqn.id.vn/assets/icon/email.svg" alt="">
+                    <span class="text-[#121212BF] font-light text-[0.9375rem]">maverickdresses@gmail.com</span>
+                </div>
+            </div>
+            <div class="text-gray-600 text-right text-[0.9375rem] w-full">
+                Free Delivery on <strong>orders</strong> over $260
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md h-[4.8125rem] sticky top-0 z-50">
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="fixed inset-0 bg-black/50 z-50 hidden">
+            <div class="bg-white w-[80%] max-w-[22rem] h-full transform -translate-x-full transition-transform duration-300" id="mobileMenuContent">
+                <div class="p-4 border-b">
+                    <div class="flex justify-between items-center text-[1.5625rem] font-medium">
+                        Maverick Dresses
+                        <button onclick="toggleMobileMenu()" class="text-gray-600 hover:text-gray-900">
+                            <i class="fas fa-times text-2xl"></i>
+                        </button>
+                    </div>
+                </div>
+                <nav class="">
+                    <ul class="space-y-4">
+                        <li class="bg-gray-50 px-5 py-4 border-b border-gray-200"><a href="#" class="block text-gray-800 hover:text-black">Home</a></li>
+                        <li class="relative group px-5 py-4 border-b border-gray-200">
+                            <button onclick="toggleSubmenu(this)" class="flex items-center justify-between w-full text-gray-800 hover:text-black">
+                                <span>Products</span>
+                                <i class="fas fa-plus text-xs transition-transform duration-300"></i>
+                            </button>
+                            <ul class="submenu hidden mt-4 transform translate-x-full transition-all duration-300 ease-in-out">
+                                <li class="px-4 py-2 relative">
+                                    <button onclick="toggleSubmenu(this)" class="flex items-center justify-between w-full text-gray-600">
+                                        <span>School Uniforms</span>
+                                        <i class="fas fa-plus text-xs transition-transform duration-300"></i>
+                                    </button>
+                                    <ul class="submenu nested-submenu hidden mt-2 pl-4 transform translate-x-full transition-all duration-300 ease-in-out">
+                                        <li class="px-4 py-2"><a href="#" class="block text-gray-600">Shirts</a></li>
+                                        <li class="px-4 py-2"><a href="#" class="block text-gray-600">Skirts</a></li>
+                                        <li class="px-4 py-2"><a href="#" class="block text-gray-600">Trousers</a></li>
+                                        <li class="px-4 py-2"><a href="#" class="block text-gray-600">Blazers</a></li>
+                                    </ul>
+                                </li>
+                                <li class="px-4 py-2"><a href="#" class="block text-gray-600">Sports Uniforms</a></li>
+                                <li class="px-4 py-2"><a href="#" class="block text-gray-600">Accessories</a></li>
+                                <li class="px-4 py-2"><a href="#" class="block text-gray-600">Winter Collection</a></li>
+                                <li class="px-4 py-2"><a href="#" class="block text-gray-600">Summer Collection</a></li>
+                                <li class="px-4 py-2"><a href="#" class="block text-gray-600">Special Offers</a></li>
+                            </ul>
+                        </li>
+                        <li class="relative group px-5 py-4 border-b border-gray-200">
+                            <button onclick="toggleSubmenu(this)" class="flex items-center justify-between w-full text-gray-800 hover:text-black">
+                                <span>About</span>
+                                <i class="fas fa-plus text-xs transition-transform duration-300"></i>
+                            </button>
+                            <ul class="submenu hidden mt-4 transform translate-x-full transition-all duration-300 ease-in-out">
+                                <li class="px-4 py-2"><a href="#" class="block text-gray-600 ">Our Story</a></li>
+                                <li class="px-4 py-2"><a href="#" class="block text-gray-600 ">Team</a></li>
+                                <li class="px-4 py-2"><a href="#" class="block text-gray-600 ">Careers</a></li>
+                                <li class="px-4 py-2"><a href="#" class="block text-gray-600 ">Mission & Vision</a></li>
+                                <li class="px-4 py-2"><a href="#" class="block text-gray-600 ">Awards</a></li>
+                            </ul>
+                        </li>
+                        <li class="relative group px-5 py-4 border-b border-gray-200">
+                            <button onclick="toggleSubmenu(this)" class="flex items-center justify-between w-full text-gray-800 hover:text-black">
+                                <span>Support</span>
+                                <i class="fas fa-plus text-xs transition-transform duration-300"></i>
+                            </button>
+                            <ul class="submenu hidden mt-4 transform translate-x-full transition-all duration-300 ease-in-out">
+                                <li class="px-4 py-2"><a href="#" class="block text-gray-600 ">FAQs</a></li>
+                                <li class="px-4 py-2"><a href="#" class="block text-gray-600 ">Contact Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </div>
+        </div>
+        <div class="w-full max-w-[89.375rem] mx-auto px-4 h-full">
+            <div class="flex items-center justify-between h-full">
+                <!-- Mobile -->
+                <div class="flex items-center justify-between w-full md:hidden">
+                    <button class="text-gray-600 hover:text-gray-900 w-[3.125rem]" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+
+                    <div class="h-[3rem] flex justify-center">
+                        <img src="https://ext.same-assets.com/3662453687/1439390586.png" alt="Maverick Dresses" class="w-auto h-[2.8125rem] px-2">
+                    </div>
+
+                    <div class="w-auto">
+                        <button class="flex h-[2.5rem] text-black items-center gap-2 whitespace-nowrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3125rem" height="1.3125rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            <span class="text-[1rem] leading-[1rem]">390 Visitors</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Desktop -->
+                <div class="  h-[4.1875rem] w-full max-w-[51.75rem] hidden md:flex items-center gap-11">
+                    <div class="h-[3rem]">
+                        <img src="https://ext.same-assets.com/3662453687/1439390586.png" alt="Maverick Dresses" class="px-[0.53125rem] h-[2.8125rem] mb-[0.1875rem]">
+                    </div>
+                    <ul class="flex items-center gap-3 w-[37.5rem]">
+                        <li class="relative h-[4.1875rem] flex items-center after:content-[''] after:absolute after:bottom-[-0.3125rem] after:left-0 after:w-full after:h-[0.1875rem] after:bg-black">
+                            <a href="#" class="text-[#757575] font-medium text-[1.0625rem] px-[0.625rem] h-full flex items-center">Home </a>
+                        </li>
+                        <li class="group h-[4.1875rem] flex items-center after:content-[''] after:absolute after:bottom-[-0.3125rem] after:left-0 after:w-0 after:h-[0.1875rem] after:bg-black hover:after:w-full after:transition-all after:duration-300">
+                            <button class="text-gray-800 font-medium text-[1.0625rem] px-[0.625rem] h-full flex items-center">
+                                Products  <i class="fas fa-chevron-down ml-1 text-[0.75rem] p-1 transition-transform duration-300 group-hover:rotate-180"></i>
+                            </button>
+                            <div class="absolute top-full left-0 w-screen h-[41.4375rem] bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <div class="w-full max-w-[89.375rem] mx-auto px-4 py-8">
+                                    <div class="grid grid-cols-6 gap-8">
+                                        <!-- Category 1 -->
+                                        <div class="col-span-1">
+                                            <h3 class="text-lg font-semibold mb-4">School Uniforms</h3>
+                                            <ul class="space-y-4">
+                                                <li><a href="#" class="text-black hover:text-gray-400">Shirts</a></li>
+                                                <li><a href="#" class="text-black hover:text-gray-400">Skirts</a></li>
+                                                <li><a href="#" class="text-black hover:text-gray-400">Frocks</a></li>
+                                                <li><a href="#" class="text-black hover:text-gray-400">Trousers</a></li>
+                                                <li><a href="#" class="text-black hover:text-gray-400">Blazers</a></li>
+                                                <li><a href="#" class="text-black hover:text-gray-400">Winter Wear</a></li>
+                                                <li><a href="#" class="text-black hover:text-gray-400">School Bags</a></li>
+                                                <li><a href="#" class="text-black hover:text-gray-400">Shoes</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- Category 2 -->
+                                        <div class="col-span-1">
+                                            <h3 class="text-lg font-semibold mb-4">Sports Uniforms</h3>
+                                            <ul class="space-y-4">
+                                                <li><a href="#" class="text-black hover:text-gray-400">P.T T-shirts</a></li>
+                                                <li><a href="#" class="text-black hover:text-gray-400">P.T Shorts</a></li>
+                                                <li><a href="#" class="text-black hover:text-gray-400">P.T track pants</a></li>
+                                                <li><a href="#" class="text-black hover:text-gray-400">Sports Shoes</a></li>
+                                                <li><a href="#" class="text-black hover:text-gray-400">Swimming Costumes</a></li>
+                                                <li><a href="#" class="text-black hover:text-gray-400">Sports Equipment</a></li>
+                                                <li><a href="#" class="text-black hover:text-gray-400">Team Jerseys</a></li>
+                                                <li><a href="#" class="text-black hover:text-gray-400">Sports Bags</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- Category 3 -->
+                                        <div class="col-span-1">
+                                            <h3 class="text-lg font-semibold mb-4">Accessories</h3>
+                                            <ul class="space-y-4">
+                                                <li><a href="#" class="text-black hover:text-gray-400">Belts</a></li>
+                                                <li><a href="#" class="text-black hover:text-gray-400">Ties</a></li>
+                                                <li><a href="#" class="text-black hover:text-gray-400">Logos</a></li>
+                                                <li><a href="#" class="text-black hover:text-gray-400">Socks</a></li>
+                                                <li><a href="#" class="text-black hover:text-gray-400">Hair Accessories</a></li>
+                                                <li><a href="#" class="text-black hover:text-gray-400">Water Bottles</a></li>
+                                                <li><a href="#" class="text-black hover:text-gray-400">Badges</a></li>
+                                                <li><a href="#" class="text-black hover:text-gray-400">Stationery</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- Category Image -->
+                                        <div class="col-span-3">
+                                            <div class="grid grid-cols-2 gap-x-8 gap-y-8">
+                                                <div class="w-[20rem]">
+                                                    <div class="h-[15.625rem]">
+                                                        <img src="https://project3.htuanqn.id.vn/assets/imgs/ads-1.webp" alt="Featured Product" class="w-full h-full object-cover rounded-md ">
+                                                    </div>
+                                                    <p class="text-[0.9375rem] mt-4 font-medium text-center">Featured</p>
+                                                </div>
+                                                <div class="group w-[20rem]">
+                                                    <div class="h-[15.625rem]">
+                                                        <img src="https://project3.htuanqn.id.vn/assets/imgs/ads-2.webp" alt="Featured Product" class="w-full h-full object-cover rounded-md ">
+                                                    </div>
+                                                    <p class="text-[0.9375rem] mt-4 font-medium text-center">New Arrivals</p>
+                                                </div>
+                                                <div class="group w-[20rem]">
+                                                    <div class="h-[15.625rem]">
+                                                        <img src="https://project3.htuanqn.id.vn/assets/imgs/ads-3.webp" alt="Featured Product" class="w-full h-full object-cover rounded-md ">
+                                                    </div>
+                                                    <p class="text-[0.9375rem] mt-4 font-medium text-center">Special Offers</p>
+                                                </div>
+                                                <div class="group w-[20rem]">
+                                                    <div class="h-[15.625rem]">
+                                                        <img src="https://project3.htuanqn.id.vn/assets/imgs/ads-4.webp" alt="Featured Product" class="w-full h-full object-cover rounded-md ">
+                                                    </div>
+                                                    <p class="text-[0.9375rem] mt-4 font-medium text-center">All Products</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="relative group h-[4.1875rem] flex items-center after:content-[''] after:absolute after:bottom-[-0.3125rem] after:left-0 after:w-0 after:h-[0.1875rem] after:bg-black hover:after:w-full after:transition-all after:duration-300">
+                            <button class="text-gray-800 font-medium text-[1.0625rem] px-[0.625rem] h-full flex items-center">
+                                About  <i class="fas fa-chevron-down ml-1 text-[0.75rem] p-1 transition-transform duration-300 group-hover:rotate-180"></i>
+                            </button>
+                            <div class="absolute top-[4.5rem] left-0 w-[13.75rem] h-[18.6875rem] bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <div class="flex flex-col justify-center h-full">
+                                    <a href="#" class="w-[13.75rem] h-[3.4375rem] flex items-center  px-6 text-black hover:bg-gray-100 transition-colors duration-300">FAQs</a>
+                                    <a href="#" class="w-[13.75rem] h-[3.4375rem] flex items-center  px-6 text-black hover:bg-gray-100 transition-colors duration-300">Shipping & Returns</a>
+                                    <a href="#" class="w-[13.75rem] h-[3.4375rem] flex items-center  px-6 text-black hover:bg-gray-100 transition-colors duration-300">Size Guide</a>
+                                    <a href="#" class="w-[13.75rem] h-[3.4375rem] flex items-center  px-6 text-black hover:bg-gray-100 transition-colors duration-300">Contact Support</a>
+                                    <a href="#" class="w-[13.75rem] h-[3.4375rem] flex items-center  px-6 text-black hover:bg-gray-100 transition-colors duration-300">Privacy Policy</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="relative group h-[4.1875rem] flex items-center after:content-[''] after:absolute after:bottom-[-0.3125rem] after:left-0 after:w-0 after:h-[0.1875rem] after:bg-black hover:after:w-full after:transition-all after:duration-300">
+                            <button class="text-gray-800 font-medium text-[1.0625rem] px-[0.625rem] h-full flex items-center">
+                                Support  <i class="fas fa-chevron-down ml-1 text-[0.75rem] p-1 transition-transform duration-300 group-hover:rotate-180"></i>
+                            </button>
+                            <div class="absolute top-[4.5rem] left-0 w-[13.75rem] h-[22.125rem] bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <div class="flex flex-col items-center justify-center h-full">
+                                    <a href="#" class="w-[13.75rem] h-[3.4375rem] flex items-center  px-6 text-black hover:bg-gray-100 transition-colors duration-300">About Us</a>
+                                    <a href="#" class="w-[13.75rem] h-[3.4375rem] flex items-center  px-6 text-black hover:bg-gray-100 transition-colors duration-300">Careers</a>
+                                    <a href="#" class="w-[13.75rem] h-[3.4375rem] flex items-center  px-6 text-black hover:bg-gray-100 transition-colors duration-300">Partners</a>
+                                    <a href="#" class="w-[13.75rem] h-[3.4375rem] flex items-center  px-6 text-black hover:bg-gray-100 transition-colors duration-300">Growth & Achievement</a>
+                                    <a href="#" class="w-[13.75rem] h-[3.4375rem] flex items-center  px-6 text-black hover:bg-gray-100 transition-colors duration-300">Awards & Recognition</a>
+                                    <a href="#" class="w-[13.75rem] h-[3.4375rem] flex items-center  px-6 text-black hover:bg-gray-100 transition-colors duration-300">Careers</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="relative group h-[4.1875rem] flex items-center after:content-[''] after:absolute after:bottom-[-0.3125rem] after:left-0 after:w-0 after:h-[0.1875rem] after:bg-black hover:after:w-full after:transition-all after:duration-300">
+                            <button class="text-gray-800 font-medium text-[1.0625rem] px-[0.625rem] h-full flex items-center">
+                                Media  <i class="fas fa-chevron-down ml-1 text-[0.75rem] p-1 transition-transform duration-300 group-hover:rotate-180"></i>
+                            </button>
+                            <div class="absolute top-[4.5rem] left-0 w-[13.75rem] h-[18.6875rem] bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <div class="flex flex-col justify-center h-full">
+                                    <button class="w-[13.75rem] h-[3.4375rem] flex items-center  px-6 text-black hover:bg-gray-100 transition-colors duration-300">Press Releases</button>
+                                    <button class="w-[13.75rem] h-[3.4375rem] flex items-center  px-6 text-black hover:bg-gray-100 transition-colors duration-300">News Articles</button>
+                                    <button class="w-[13.75rem] h-[3.4375rem] flex items-center  px-6 text-black hover:bg-gray-100 transition-colors duration-300">Photo Gallery</button>
+                                    <button class="w-[13.75rem] h-[3.4375rem] flex items-center  px-6 text-black hover:bg-gray-100 transition-colors duration-300">Video Content</button>
+                                    <button class="w-[13.75rem] h-[3.4375rem] flex items-center  px-6 text-black hover:bg-gray-100 transition-colors duration-300">Media Kit</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="relative group h-[4.1875rem] flex items-center after:content-[''] after:absolute after:bottom-[-0.3125rem] after:left-0 after:w-0 after:h-[0.1875rem] after:bg-black hover:after:w-full after:transition-all after:duration-300">
+                            <button class="text-gray-800 font-medium text-[1.0625rem] px-[0.625rem] h-full flex items-center">
+                                Activities  <i class="fas fa-chevron-down ml-1 text-[0.75rem] p-1 transition-transform duration-300 group-hover:rotate-180"></i>
+                            </button>
+                            <div class="absolute top-[4.5rem] left-0 w-[13.75rem] h-[18.6875rem] bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                                <div class="flex flex-col justify-center h-full">
+                                    <button class="w-[13.75rem] h-[3.4375rem] flex items-center  px-6 text-black hover:bg-gray-100 transition-colors duration-300">School Events</button>
+                                    <button class="w-[13.75rem] h-[3.4375rem] flex items-center  px-6 text-black hover:bg-gray-100 transition-colors duration-300">Sports Tournaments</button>
+                                    <button class="w-[13.75rem] h-[3.4375rem] flex items-center  px-6 text-black hover:bg-gray-100 transition-colors duration-300">Cultural Programs</button>
+                                    <button class="w-[13.75rem] h-[3.4375rem] flex items-center  px-6 text-black hover:bg-gray-100 transition-colors duration-300">Workshops</button>
+                                    <button class="w-[13.75rem] h-[3.4375rem] flex items-center  px-6 text-black hover:bg-gray-100 transition-colors duration-300">Community Service</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Desktop icon -->
+                <ul class="hidden md:flex items-center justify-between">
+                    <li>
+                        <button class="w-[3.125rem] h-[2.5rem] flex items-center justify-center relative text-[#121212] transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3125rem" height="1.3125rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+                        </button>
+                    </li>
+                    <li>
+                        <a href="/pages/wishlist" data-discover="true">
+                            <button class="w-[3.125rem] h-[2.5rem] flex items-center justify-center relative text-[#121212] transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.3125rem" height="1.3125rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+                                <span class="absolute -top-[0.03125rem] -right-[0.00625rem] bg-[#121212] text-white text-[0.75rem] w-5 h-5 rounded-full flex items-center justify-center">0</span>
+                            </button>
+                        </a>
+                    </li>
+                    <li>
+                        <button class="w-[3.125rem] h-[2.5rem] flex items-center justify-center relative text-[#121212] transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3125rem" height="1.3125rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                            <span class="absolute -top-[0.03125rem] -right-[0.003125rem] bg-[#121212] text-white text-[0.75rem] w-5 h-5 rounded-full flex items-center justify-center">0</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="flex w-[8.125rem] h-[2.5rem] text-black items-center justify-end gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3125rem" height="1.3125rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            <span class="text-[1rem] leading-[1rem]">390 Visitors</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="swiper hero-slider relative">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"> 
+                <section class="bg-cover bg-center bg-no-repeat h-[50.3125rem] relative " style="background-image: url('https://project3.htuanqn.id.vn//assets/imgs/background-1.jpg')">
+                    <div class="w-[53.75rem] h-full ml-[6rem]">
+                        <div class="flex flex-col w-[53.75rem] h-[19.25rem] items-center absolute top-[15.5rem]">
+                            <div class="text-center w-full">
+                                <h1 class="text-[4.375rem] font-medium text-gray-800 h-[11.375rem] leading-[1.1] max-w-[53.75rem] mx-auto">The Largest School Uniform Supplier in the Country</h1>
+                                <p class="text-black h-[2rem] text-lg">We prioritize user experience and provide the best uniform solutions for students.</p>
+                            </div>
+                            <div class="mt-[2.125rem]">
+                                <button class="bg-gray-800 text-white w-[10.6875rem] h-[3.375rem] rounded-sm hover:bg-gray-700 flex items-center justify-center space-x-2">
+                                    <span>Shop Now</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="swiper-slide">
+                <section class="bg-cover bg-center bg-no-repeat h-[50.3125rem] relative" style="background-image: url('https://project3.htuanqn.id.vn//assets/imgs/background-2.jpg')">
+                    <div class="w-[53.75rem] h-full ml-[6rem]">
+                        <div class="flex flex-col w-[53.75rem] h-[19.25rem] items-center absolute top-[15.5rem]">
+                            <div class="text-center w-full">
+                                <h1 class="text-[4.375rem] font-medium text-gray-800 h-[11.375rem] leading-[1.1] max-w-[53.75rem] mx-auto">Explore Our Latest Collection</h1>
+                                <p class="text-black h-[2rem] text-lg">Stylish and comfortable uniforms designed for students.</p>
+                            </div>
+                            <div class="mt-[2.125rem]">
+                                <button class="bg-gray-800 text-white w-[10.6875rem] h-[3.375rem] rounded-sm hover:bg-gray-700 flex items-center justify-center space-x-2">
+                                    <span>Shop Now</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="swiper-button-next !w-10 !h-10 !bg-gray-800/20 hover:!bg-gray-800/40 !rounded-full !shadow-md after:!content-[''] !flex !items-center !justify-center !right-4">
+            <i class="fas fa-chevron-right text-white/10 text-[2rem] font-bold"></i>
+        </div>
+        <div class="swiper-button-prev !w-10 !h-10 !bg-gray-800/20 hover:!bg-gray-800/40 !rounded-full !shadow-md after:!content-[''] !flex !items-center !justify-center !left-4">
+            <i class="fas fa-chevron-left text-white/10 text-[2rem] font-bold"></i>
+        </div>
+        <div class="swiper-pagination !bottom-8 !flex !justify-center !gap-4 !text-white"></div>
+    </div>
+
+    <section class="mt-[2.0625rem]">
+        <div class="container mx-auto max-w-[119.375rem] px-4 md:px-[3.125rem]">
+            <div class="flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap gap-4 md:gap-6 lg:space-x-7">
+                <div class="relative rounded-xl w-full md:w-[calc(50%-12px)] lg:w-[36.4375rem] aspect-[2/1] group overflow-hidden flex items-center">
+                    <div class="absolute inset-0 bg-[url('https://project3.htuanqn.id.vn/assets/imgs/banner-1.png')] bg-cover bg-center transition-transform duration-300 group-hover:scale-110"></div>
+                    <div class="relative z-10 p-8 pl-[2.375rem] -mt-2">
+                        <span class="text-[0.9375rem] text-[#121212BF] font-light py-1 flex mb-1">TOP COLLECTIONS</span>
+                        <h3 class="text-[2rem] font-medium text-black mb-[1.75rem] leading-[2.625rem]">Top Trends Style</h3>
+                        <a href="#" class="w-[4.75rem] h-[1.9375rem] text-gray-800 text-base border-b border-gray-800">Shop Now</a>
+                    </div>
+                </div>
+
+                <div class="relative rounded-xl w-full md:w-[calc(50%-12px)] lg:w-[36.4375rem] aspect-[2/1] group overflow-hidden flex items-center">
+                    <div class="absolute inset-0 bg-[url('https://project3.htuanqn.id.vn/assets/imgs/banner-2.png')] bg-cover bg-center transition-transform duration-300 group-hover:scale-110"></div>
+                    <div class="relative z-10 p-8 pl-[2.375rem] -mt-2">
+                        <span class="text-[0.9375rem] text-[#121212BF] font-light py-1 flex">PREMIUM STYLE</span>
+                        <h3 class="text-[2rem] font-medium text-black mb-[1.75rem] leading-[2.625rem]">Here Your Look</h3>
+                        <a href="#" class="w-[4.75rem] h-[1.9375rem] text-gray-800 text-base border-b border-gray-800">Shop Now</a>
+                    </div>
+                </div>
+
+                <div class="relative rounded-xl w-full md:w-[calc(50%-12px)] lg:w-[36.4375rem] aspect-[2/1] group overflow-hidden flex items-center">
+                    <div class="absolute inset-0 bg-[url('https://project3.htuanqn.id.vn/assets/imgs/banner-3.png')] bg-cover bg-center transition-transform duration-300 group-hover:scale-110"></div>
+                    <div class="relative z-10 p-8 pl-[2.375rem] -mt-2">
+                        <span class="text-[0.9375rem] text-[#121212BF] font-light py-1 flex">EXCLUSIVE SALE</span>
+                        <h3 class="text-[2rem] font-medium text-black mb-[1.75rem] leading-[2.625rem]">Up to 50% Off</h3>
+                        <a href="#" class="w-[4.75rem] h-[1.9375rem] text-gray-800 text-base border-b border-gray-800">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-[5rem]">
+        <div class="container mx-auto max-w-[89.375rem]">
+            <div class="text-center mb-12 max-w-[89.375rem] h-[7.5rem] mx-auto flex flex-col justify-between px-4 md:px-6 lg:px-0">
+                <h2 class="text-[2.5rem] font-medium text-gray-800 w-[19.8125rem] h-[3.25rem] mx-auto">Featured Products</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover our premium school uniforms - Crafted with care and designed for comfort, our collection features high-quality materials and timeless styles</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 mt-[3.125rem] px-4 md:px-6 lg:px-0">
+                <!-- Product 1 -->
+                <div class="w-full group relative">
+                    <span class="text-white font-medium absolute top-[0.7rem] left-[0.7rem] bg-[#FF4D4D] flex items-center justify-center text-[0.8rem] px-[0.5rem] py-[0.25rem] rounded w-[4.625rem] h-[1.4375rem] text-center z-10">20% OFF</span>
+                    <div class="bg-white w-full aspect-square md:aspect-[297/396] lg:w-[20.8125rem] lg:h-[27.75rem] rounded-xl shadow-sm border m-[0.0625rem] relative overflow-hidden">
+                        <img src="https://ext.same-assets.com/3662453687/971678776.webp" alt="Boys Tie" class="w-full h-full object-cover rounded transition-transform duration-300 group-hover:scale-[1.2]">
+                    </div>
+                    <div class="mt-[0.5rem]">
+                        <div class="flex justify-center py-[0.7rem]">
+                            <div class="flex text-yellow-300 h-[1.125rem]">
+                                <i class="fas fa-star text-[0.8rem]"></i>
+                                <i class="fas fa-star text-[0.8rem]"></i>
+                                <i class="fas fa-star text-[0.8rem]"></i>
+                                <i class="fas fa-star text-[0.8rem]"></i>
+                                <i class="fas fa-star text-[0.8rem]"></i>
+                            </div>
+                            <span class="text-gray-500 text-[0.875rem] ml-[0.5rem]">(5.0)</span>
+                        </div>
+                        <h3 class="text-[0.875rem] font-medium text-gray-800 mb-[0.5rem] text-center">Boys Tie Kids Ties, Adjustable Pre-Tied Tie for Boys Girls Zipper Neckties for School Uniform Graduation Wedding Party</h3>
+                        <div class="flex justify-center space-x-[0.5rem]">
+                            <span class="flex justify-center text-red-600 font-bold">$7.99</span>
+                            <span class="flex justify-center text-gray-400 line-through text-[0.875rem]">$10</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="w-full group relative">
+                    <span class="text-white font-medium absolute top-[0.7rem] left-[0.7rem] bg-[#FF4D4D] flex items-center justify-center text-[0.8rem] px-[0.5rem] py-[0.25rem] rounded w-[4.625rem] h-[1.4375rem] text-center z-10">20% OFF</span>
+                    <div class="bg-white w-full aspect-square md:aspect-[297/396] lg:w-[20.8125rem] lg:h-[27.75rem] rounded-xl shadow-sm border m-[0.0625rem] relative overflow-hidden">
+                        <img src="https://ext.same-assets.com/3662453687/971678776.webp" alt="Boys Tie" class="w-full h-full object-cover rounded transition-transform duration-300 group-hover:scale-[1.2]">
+                    </div>
+                    <div class="mt-[0.5rem]">
+                        <div class="flex justify-center py-[0.7rem]">
+                            <div class="flex text-yellow-300 h-[1.125rem]">
+                                <i class="fas fa-star text-[0.8rem]"></i>
+                                <i class="fas fa-star text-[0.8rem]"></i>
+                                <i class="fas fa-star text-[0.8rem]"></i>
+                                <i class="fas fa-star text-[0.8rem]"></i>
+                                <i class="fas fa-star text-[0.8rem]"></i>
+                            </div>
+                            <span class="text-gray-500 text-[0.875rem] ml-[0.5rem]">(5.0)</span>
+                        </div>
+                        <h3 class="text-[0.875rem] font-medium text-gray-800 mb-[0.5rem] text-center">Boys Tie Kids Ties, Adjustable Pre-Tied Tie for Boys Girls Zipper Neckties for School Uniform Graduation Wedding Party</h3>
+                        <div class="flex justify-center space-x-[0.5rem]">
+                            <span class="flex justify-center text-red-600 font-bold">$7.99</span>
+                            <span class="flex justify-center text-gray-400 line-through text-[0.875rem]">$10</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="w-full group relative">
+                    <span class="text-white font-medium absolute top-[0.7rem] left-[0.7rem] bg-[#FF4D4D] flex items-center justify-center text-[0.8rem] px-[0.5rem] py-[0.25rem] rounded w-[4.625rem] h-[1.4375rem] text-center z-10">20% OFF</span>
+                    <div class="bg-white w-full aspect-square md:aspect-[297/396] lg:w-[20.8125rem] lg:h-[27.75rem] rounded-xl shadow-sm border m-[0.0625rem] relative overflow-hidden">
+                        <img src="https://ext.same-assets.com/3662453687/971678776.webp" alt="Boys Tie" class="w-full h-full object-cover rounded transition-transform duration-300 group-hover:scale-[1.2]">
+                    </div>
+                    <div class="mt-[0.5rem]">
+                        <div class="flex justify-center py-[0.7rem]">
+                            <div class="flex text-yellow-300 h-[1.125rem]">
+                                <i class="fas fa-star text-[0.8rem]"></i>
+                                <i class="fas fa-star text-[0.8rem]"></i>
+                                <i class="fas fa-star text-[0.8rem]"></i>
+                                <i class="fas fa-star text-[0.8rem]"></i>
+                                <i class="fas fa-star text-[0.8rem]"></i>
+                            </div>
+                            <span class="text-gray-500 text-[0.875rem] ml-[0.5rem]">(5.0)</span>
+                        </div>
+                        <h3 class="text-[0.875rem] font-medium text-gray-800 mb-[0.5rem] text-center">Boys Tie Kids Ties, for School Uniform Graduation Wedding Party</h3>
+                        <div class="flex justify-center space-x-[0.5rem]">
+                            <span class="flex justify-center text-red-600 font-bold">$7.99</span>
+                            <span class="flex justify-center text-gray-400 line-through text-[0.875rem]">$10</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="w-full group relative">
+                    <span class="text-white font-medium absolute top-[0.7rem] left-[0.7rem] bg-[#FF4D4D] flex items-center justify-center text-[0.8rem] px-[0.5rem] py-[0.25rem] rounded w-[4.625rem] h-[1.4375rem] text-center z-10">20% OFF</span>
+                    <div class="bg-white w-full aspect-square md:aspect-[297/396] lg:w-[20.8125rem] lg:h-[27.75rem] rounded-xl shadow-sm border m-[0.0625rem] relative overflow-hidden">
+                        <img src="https://ext.same-assets.com/3662453687/2175515252.webp" alt="Pleated Skirts" class="w-full h-full object-cover rounded transition-transform duration-300 group-hover:scale-[1.2]">
+                    </div>
+                    <div class="mt-[0.5rem]">
+                        <div class="flex justify-center py-[0.7rem]">
+                            <div class="flex text-yellow-300 h-[1.125rem]">
+                                <i class="fas fa-star text-[0.8rem]"></i>
+                                <i class="fas fa-star text-[0.8rem]"></i>
+                                <i class="fas fa-star text-[0.8rem]"></i>
+                                <i class="fas fa-star text-[0.8rem]"></i>
+                                <i class="fas fa-star text-[0.8rem]"></i>
+                            </div>
+                            <span class="text-gray-500 text-[0.875rem] ml-[0.5rem]">(5.0)</span>
+                        </div>
+                        <h3 class="text-[0.875rem] font-medium text-gray-800 mb-[0.5rem] text-center">Boys Tie Kids Ties, Adjustable Pre-Tied Tie for Boys Girls Zipper Neckties for School Uniform Graduation Wedding Party</h3>
+                        <div class="flex justify-center space-x-[0.5rem]">
+                            <span class="flex justify-center text-red-600 font-bold">$7.99</span>
+                            <span class="flex justify-center text-gray-400 line-through text-[0.875rem]">$10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="mt-[5rem] w-[119.375rem] h-[3.75rem] flex gap-3 justify-center items-center border overflow-hidden">
+        <div class="relative w-full overflow-hidden">
+            <div class="animate-marquee flex gap-3 justify-center items-center whitespace-nowrap">
+                <div class="flex items-center gap-2 py-[1.25rem]">
+                    <img src="https://project3.htuanqn.id.vn/assets/icon/start.svg" alt="" class="w-[1.3125rem] h-[1.1875rem]">
+                    <p class="text-[0.9375rem] font-medium">FREE DELIVERY FOR ORDER OVER $100</p>
+                </div>
+                <div class="flex items-center gap-2 py-[1.25rem]">
+                    <img src="https://project3.htuanqn.id.vn/assets/icon/start.svg" alt="" class="w-[1.3125rem] h-[1.1875rem]">
+                    <p class="text-[0.9375rem] font-medium">EASY RETURNS - 30 DAYS MONEY BACK GUARANTEE!</p>
+                </div>
+                <div class="flex items-center gap-2 py-[1.25rem]">
+                    <img src="https://project3.htuanqn.id.vn/assets/icon/start.svg" alt="" class="w-[1.3125rem] h-[1.1875rem]">
+                    <p class="text-[0.9375rem] font-medium">BUY NOW, PAY LATER WITH EASY INSTALLMENTS</p>
+                </div>
+                <div class="flex items-center gap-2 py-[1.25rem]">
+                    <img src="https://project3.htuanqn.id.vn/assets/icon/start.svg" alt="" class="w-[1.3125rem] h-[1.1875rem]">
+                    <p class="text-[0.9375rem] font-medium">FOLLOW US & GET EXCLUSIVE COUPONS</p>
+                </div>
+                <div class="flex items-center gap-2 py-[1.25rem]">
+                    <img src="https://project3.htuanqn.id.vn/assets/icon/start.svg" alt="" class="w-[1.3125rem] h-[1.1875rem]">
+                    <p class="text-[0.9375rem] font-medium">NEW COLLECTIONS ARRIVING EVERY WEEK!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Best Sales -->
+    <section class="mt-[5.625rem] py-8">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-[2.5rem] font-medium text-[#121212] mb-4">Best Sales</h2>
+                <p class="text-[#121212CC] max-w-2xl mx-auto">Our top-performing products based on real sales and reviews. These items showcase the best in terms of value, comfort and customer generation while our school uniforms collection</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 max-w-[89.375rem] mx-auto">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-2xl shadow-sm border relative w-full min-w-0 max-w-full lg:max-w-[28.5625rem] group">
+                    <span class="absolute w-[4.9375rem] h-[1.4375rem] top-2 left-2 bg-[#FF4D4D] font-medium text-white text-xs px-3 py-1 rounded z-10">SALE 15%</span>
+                    <div class="flex flex-col md:flex-row">
+                        <div class="w-full aspect-square md:w-[11.25rem] md:h-[11.25rem] overflow-hidden">
+                            <img src="https://ext.same-assets.com/3662453687/1399606844.webp" alt="French Toast Shirt" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.2]">
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center p-4 md:p-5">
+                            <h3 class="text-[0.9375rem] lg:text-[1rem] font-medium text-gray-800 mb-3 lg:mb-[0.5rem] line-clamp-2">French Toast Boys' Long Sleeve Oxford Shirt (Standard & Husky)</h3>
+                            <div class="flex items-center mb-3 lg:mb-[0.9375rem]">
+                                <div class="flex text-yellow-300">
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                </div>
+                                <span class="text-gray-500 text-xs ml-2">(5.0)</span>
+                            </div>
+                            <p class="text-[0.875rem] lg:text-[0.9375rem] font-medium text-[#000000] mb-3 lg:mb-[0.625rem]">38,000 purchases</p>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-red-600 font-bold">$13.49</span>
+                                <span class="text-gray-400 line-through text-sm">$16</span>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-2xl shadow-sm border relative w-full min-w-0 max-w-full lg:max-w-[28.5625rem] group">
+                    <span class="absolute w-[4.9375rem] h-[1.4375rem] top-2 left-2 bg-[#FF4D4D] font-medium text-white text-xs px-3 py-1 rounded z-10">SALE 15%</span>
+                    <div class="flex flex-col md:flex-row">
+                        <div class="w-full aspect-square md:w-[11.25rem] md:h-[11.25rem] overflow-hidden">
+                            <img src="https://ext.same-assets.com/3662453687/1399606844.webp" alt="French Toast Shirt" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.2]">
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center p-4 md:p-5">
+                            <h3 class="text-[0.9375rem] lg:text-[1rem] font-medium text-gray-800 mb-3 lg:mb-[0.5rem] line-clamp-2">French Toast Boys' Long Sleeve Oxford Shirt (Standard & Husky)</h3>
+                            <div class="flex items-center mb-3 lg:mb-[0.9375rem]">
+                                <div class="flex text-yellow-300">
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                </div>
+                                <span class="text-gray-500 text-xs ml-2">(5.0)</span>
+                            </div>
+                            <p class="text-[0.875rem] lg:text-[0.9375rem] font-medium text-[#000000] mb-3 lg:mb-[0.625rem]">38,000 purchases</p>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-red-600 font-bold">$13.49</span>
+                                <span class="text-gray-400 line-through text-sm">$16</span>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-2xl shadow-sm border relative w-full min-w-0 max-w-full lg:max-w-[28.5625rem] group">
+                    <span class="absolute w-[4.9375rem] h-[1.4375rem] top-2 left-2 bg-[#FF4D4D] font-medium text-white text-xs px-3 py-1 rounded z-10">SALE 15%</span>
+                    <div class="flex flex-col md:flex-row">
+                        <div class="w-full aspect-square md:w-[11.25rem] md:h-[11.25rem] overflow-hidden">
+                            <img src="https://ext.same-assets.com/3662453687/1399606844.webp" alt="French Toast Shirt" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.2]">
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center p-4 md:p-5">
+                            <h3 class="text-[0.9375rem] lg:text-[1rem] font-medium text-gray-800 mb-3 lg:mb-[0.5rem] line-clamp-2">French Toast Boys' Long Sleeve Oxford Shirt (Standard & Husky)</h3>
+                            <div class="flex items-center mb-3 lg:mb-[0.9375rem]">
+                                <div class="flex text-yellow-300">
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                </div>
+                                <span class="text-gray-500 text-xs ml-2">(5.0)</span>
+                            </div>
+                            <p class="text-[0.875rem] lg:text-[0.9375rem] font-medium text-[#000000] mb-3 lg:mb-[0.625rem]">38,000 purchases</p>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-red-600 font-bold">$13.49</span>
+                                <span class="text-gray-400 line-through text-sm">$16</span>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="bg-white rounded-2xl shadow-sm border relative w-full min-w-0 max-w-full lg:max-w-[28.5625rem] group">
+                    <span class="absolute w-[4.9375rem] h-[1.4375rem] top-2 left-2 bg-[#FF4D4D] font-medium text-white text-xs px-3 py-1 rounded z-10">SALE 15%</span>
+                    <div class="flex flex-col md:flex-row">
+                        <div class="w-full aspect-square md:w-[11.25rem] md:h-[11.25rem] overflow-hidden">
+                            <img src="https://ext.same-assets.com/3662453687/1399606844.webp" alt="French Toast Shirt" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.2]">
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center p-4 md:p-5">
+                            <h3 class="text-[0.9375rem] lg:text-[1rem] font-medium text-gray-800 mb-3 lg:mb-[0.5rem] line-clamp-2">French Toast Boys' Long Sleeve Oxford Shirt (Standard & Husky)</h3>
+                            <div class="flex items-center mb-3 lg:mb-[0.9375rem]">
+                                <div class="flex text-yellow-300">
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                </div>
+                                <span class="text-gray-500 text-xs ml-2">(5.0)</span>
+                            </div>
+                            <p class="text-[0.875rem] lg:text-[0.9375rem] font-medium text-[#000000] mb-3 lg:mb-[0.625rem]">38,000 purchases</p>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-red-600 font-bold">$13.49</span>
+                                <span class="text-gray-400 line-through text-sm">$16</span>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="bg-white rounded-2xl shadow-sm border relative w-full min-w-0 max-w-full lg:max-w-[28.5625rem] group">
+                    <span class="absolute w-[4.9375rem] h-[1.4375rem] top-2 left-2 bg-[#FF4D4D] font-medium text-white text-xs px-3 py-1 rounded z-10">SALE 15%</span>
+                    <div class="flex flex-col md:flex-row">
+                        <div class="w-full aspect-square md:w-[11.25rem] md:h-[11.25rem] overflow-hidden">
+                            <img src="https://ext.same-assets.com/3662453687/1399606844.webp" alt="French Toast Shirt" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.2]">
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center p-4 md:p-5">
+                            <h3 class="text-[0.9375rem] lg:text-[1rem] font-medium text-gray-800 mb-3 lg:mb-[0.5rem] line-clamp-2">French Toast Boys' Long Sleeve Oxford Shirt (Standard & Husky)</h3>
+                            <div class="flex items-center mb-3 lg:mb-[0.9375rem]">
+                                <div class="flex text-yellow-300">
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                </div>
+                                <span class="text-gray-500 text-xs ml-2">(5.0)</span>
+                            </div>
+                            <p class="text-[0.875rem] lg:text-[0.9375rem] font-medium text-[#000000] mb-3 lg:mb-[0.625rem]">38,000 purchases</p>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-red-600 font-bold">$13.49</span>
+                                <span class="text-gray-400 line-through text-sm">$16</span>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="bg-white rounded-2xl shadow-sm border relative w-full min-w-0 max-w-full lg:max-w-[28.5625rem] group">
+                    <span class="absolute w-[4.9375rem] h-[1.4375rem] top-2 left-2 bg-[#FF4D4D] font-medium text-white text-xs px-3 py-1 rounded z-10">SALE 15%</span>
+                    <div class="flex flex-col md:flex-row">
+                        <div class="w-full aspect-square md:w-[11.25rem] md:h-[11.25rem] overflow-hidden">
+                            <img src="https://ext.same-assets.com/3662453687/1399606844.webp" alt="French Toast Shirt" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.2]">
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center p-4 md:p-5">
+                            <h3 class="text-[0.9375rem] lg:text-[1rem] font-medium text-gray-800 mb-3 lg:mb-[0.5rem] line-clamp-2">French Toast Boys' Long Sleeve Oxford Shirt (Standard & Husky)</h3>
+                            <div class="flex items-center mb-3 lg:mb-[0.9375rem]">
+                                <div class="flex text-yellow-300">
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                    <i class="fas fa-star text-xs"></i>
+                                </div>
+                                <span class="text-gray-500 text-xs ml-2">(5.0)</span>
+                            </div>
+                            <p class="text-[0.875rem] lg:text-[0.9375rem] font-medium text-[#000000] mb-3 lg:mb-[0.625rem]">38,000 purchases</p>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-red-600 font-bold">$13.49</span>
+                                <span class="text-gray-400 line-through text-sm">$16</span>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand logo -->
+    <section class="h-auto md:h-[8.125rem] mt-[5rem] border">
+        <div class="container mx-auto px-4 h-full">
+            <div class="py-8 md:py-0 flex flex-wrap md:flex-nowrap justify-center items-center gap-8 md:space-x-24 grayscale h-full">
+                <img src="https://ext.same-assets.com/3662453687/695499830.webp" alt="FILA" class="w-[4rem] h-[2.25rem] md:w-[5.3125rem] md:h-[3rem]">
+                <img src="https://ext.same-assets.com/3662453687/4035663486.webp" alt="Just Do It" class="w-[4rem] h-[2.25rem] md:w-[5.3125rem] md:h-[3rem]">
+                <img src="https://ext.same-assets.com/3662453687/2856551181.webp" alt="Nike" class="w-[4rem] h-[2.25rem] md:w-[5.3125rem] md:h-[3rem]">
+                <img src="https://ext.same-assets.com/3662453687/3696670433.webp" alt="Adidas" class="w-[4rem] h-[2.25rem] md:w-[5.3125rem] md:h-[3rem]">
+                <img src="https://ext.same-assets.com/3662453687/3128517769.webp" alt="Logo" class="w-[4rem] h-[2.25rem] md:w-[5.3125rem] md:h-[3rem]">
+                <img src="https://ext.same-assets.com/3662453687/1502073442.webp" alt="Puma" class="w-[4rem] h-[2.25rem] md:w-[5.3125rem] md:h-[3rem]">
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="h-auto lg:h-[30.1875rem] mt-[3.75rem]">
+        <div class="container mx-auto px-4 h-full">
+            <div class="flex flex-col lg:flex-row items-center h-full">
+                <div class="w-full lg:w-[53.5rem] relative group mb-8 lg:mb-0">
+                    <img src="https://project3.htuanqn.id.vn/assets/imgs/video-promo.webp" alt="Students" class="w-full h-full rounded-lg">
+                    <div class="absolute inset-0 bg-black/20 opacity-100 group-hover:opacity-80 transition-opacity duration-300 rounded-lg"></div>
+                    <button onclick="playVideo()" class="absolute inset-0 flex items-center justify-center cursor-pointer">
+                        <div class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-play text-white text-2xl ml-1"></i>
+                        </div>
+                    </button>
+                    <div id="youtubePlayer" class="absolute inset-0 hidden">
+                        <iframe width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="rounded-lg"></iframe>
+                    </div>
+                </div>
+                <div class="lg:pl-12 text-center lg:text-left">
+                    <h2 class="text-[2.5rem] lg:text-[3rem] font-medium text-gray-800 mb-4 w-full lg:w-[28.4375rem]">Discover Our Product</h2>
+                    <p class="text-gray-600 flex items-center gap-2 mt-8 lg:mt-16 justify-center lg:justify-start">
+                        <a href="https://www.youtube.com/@MOMOGIRLFASHION" target="_blank" class="flex items-center gap-2">
+                            <span class="text-[0.9375rem]">FOLLOW US ON YOUTUBE</span>
+                            <i class="fab fa-youtube text-red-600 text-xl"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="mt-[5rem]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 h-[7.5rem] w-[89.375rem] mx-auto">
+                <h2 class="text-[2.5rem] font-medium text-[#121212] mb-4 mx-auto w-[12.0625rem] h-[3.25rem]">Testimonial</h2>
+                <p class="text-gray-600 h-[3.625rem] w-[43.75rem] mx-auto">Read customer testimonials sharing how our school uniforms combine comfort, style, and durability for everyday wear.</p>
+            </div>
+
+            <div class="swiper testimonial-slider w-[89.375rem] mx-auto relative">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide">
+                        <div class="bg-[#F3F3F3] p-6 rounded-lg shadow-sm border w-[28.5625rem] h-[22.9375rem] mx-auto">
+                            <div class="flex flex-col items-center mb-4">
+                                <img src="https://ext.same-assets.com/3662453687/3952770387.webp" alt="Michael James" class="w-[4.375rem] h-[4.375rem] rounded-full mb-2 mt-2">
+                                <div class="text-center">
+                                    <h4 class="font-bold text-black w-[24.8125rem] h-[1.3125rem] mt-[0.5rem] mb-[0.1875rem]">Michael James</h4>
+                                    <p class="font-semibold text-[1.0625rem] text-[#1212127E] h-[1.5rem] mt-2">School Administrator</p>
+                                </div>
+                            </div>
+                            <div class="flex text-sm gap-1 justify-center text-yellow-300">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-[#121212E6] text-[1.0625rem] text-center mt-[0.9375rem]">I have been a regular customer for many years and the staff are always pleasant. They attention to detail and customer service is outstanding.</p>
+                            <p class="text-[1rem] text-black mt-[1.25rem] text-center">March 30, 2024</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide">
+                        <div class="bg-[#F3F3F3] p-6 rounded-lg shadow-sm border w-[28.5625rem] h-[22.9375rem] mx-auto">
+                            <div class="flex flex-col items-center mb-4">
+                                <img src="https://ext.same-assets.com/3662453687/3846735296.webp" alt="Emily Rodriguez" class="w-[4.375rem] h-[4.375rem] rounded-full mb-2 mt-2">
+                                <div class="text-center">
+                                    <h4 class="font-bold text-black w-[24.8125rem] h-[1.3125rem] mt-[0.5rem] mb-[0.1875rem]">Emily Rodriguez</h4>
+                                    <p class="font-semibold text-[1.0625rem] text-[#1212127E] h-[1.5rem] mt-2">Parent</p>
+                                </div>
+                            </div>
+                            <div class="flex text-sm gap-1 justify-center text-yellow-300">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-[#121212E6] text-[1.0625rem] text-center mt-[0.9375rem]">These uniforms are both stylish and comfortable! I especially love the sports uniforms - they're perfect for all my activities.</p>
+                            <p class="text-[1rem] text-black mt-[1.25rem] text-center">March 5, 2024</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide">
+                        <div class="bg-[#F3F3F3] p-6 rounded-lg shadow-sm border w-[28.5625rem] h-[22.9375rem] mx-auto">
+                            <div class="flex flex-col items-center mb-4">
+                                <img src="https://ext.same-assets.com/3662453687/3846735296.webp" alt="Emily Rodriguez" class="w-[4.375rem] h-[4.375rem] rounded-full mb-2 mt-2">
+                                <div class="text-center">
+                                    <h4 class="font-bold text-black w-[24.8125rem] h-[1.3125rem] mt-[0.5rem] mb-[0.1875rem]">Emily Rodriguez</h4>
+                                    <p class="font-semibold text-[1.0625rem] text-[#1212127E] h-[1.5rem] mt-2">Parent</p>
+                                </div>
+                            </div>
+                            <div class="flex text-sm gap-1 justify-center text-yellow-300">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-[#121212E6] text-[1.0625rem] text-center mt-[0.9375rem]">These uniforms are both stylish and comfortable! I especially love the sports uniforms - they're perfect for all my activities.</p>
+                            <p class="text-[1rem] text-black mt-[1.25rem] text-center">March 5, 2024</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="swiper-slide">
+                        <div class="bg-[#F3F3F3] p-6 rounded-lg shadow-sm border w-[28.5625rem] h-[22.9375rem] mx-auto">
+                            <div class="flex flex-col items-center mb-4">
+                                <img src="https://ext.same-assets.com/3662453687/3846735296.webp" alt="Emily Rodriguez" class="w-[4.375rem] h-[4.375rem] rounded-full mb-2 mt-2">
+                                <div class="text-center">
+                                    <h4 class="font-bold text-black w-[24.8125rem] h-[1.3125rem] mt-[0.5rem] mb-[0.1875rem]">Emily Rodriguez</h4>
+                                    <p class="font-semibold text-[1.0625rem] text-[#1212127E] h-[1.5rem] mt-2">Parent</p>
+                                </div>
+                            </div>
+                            <div class="flex text-sm gap-1 justify-center text-yellow-300">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-[#121212E6] text-[1.0625rem] text-center mt-[0.9375rem]">These uniforms are both stylish and comfortable! I especially love the sports uniforms - they're perfect for all my activities.</p>
+                            <p class="text-[1rem] text-black mt-[1.25rem] text-center">March 5, 2024</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="swiper-slide">
+                        <div class="bg-[#F3F3F3] p-6 rounded-lg shadow-sm border w-[28.5625rem] h-[22.9375rem] mx-auto">
+                            <div class="flex flex-col items-center mb-4">
+                                <img src="https://ext.same-assets.com/3662453687/3846735296.webp" alt="Emily Rodriguez" class="w-[4.375rem] h-[4.375rem] rounded-full mb-2 mt-2">
+                                <div class="text-center">
+                                    <h4 class="font-bold text-black w-[24.8125rem] h-[1.3125rem] mt-[0.5rem] mb-[0.1875rem]">Emily Rodriguez</h4>
+                                    <p class="font-semibold text-[1.0625rem] text-[#1212127E] h-[1.5rem] mt-2">Parent</p>
+                                </div>
+                            </div>
+                            <div class="flex text-sm gap-1 justify-center text-yellow-300">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-[#121212E6] text-[1.0625rem] text-center mt-[0.9375rem]">These uniforms are both stylish and comfortable! I especially love the sports uniforms - they're perfect for all my activities.</p>
+                            <p class="text-[1rem] text-black mt-[1.25rem] text-center">March 5, 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination !bottom-[-30px] !flex !justify-center !gap-2 [&_.swiper-pagination-bullet]:!w-2.5 [&_.swiper-pagination-bullet]:!h-2.5 [&_.swiper-pagination-bullet]:!bg-gray-300 [&_.swiper-pagination-bullet]:!opacity-100 [&_.swiper-pagination-bullet-active]:!bg-black [&_.swiper-pagination-bullet]:!transition-all [&_.swiper-pagination-bullet]:!duration-300"></div>
+                <div class="swiper-button-next !w-10 !h-10 !bg-white/20 hover:!bg-white/20 !rounded-full !shadow-md !flex !items-center !justify-center !right-4" style="--swiper-navigation-size: 0;">
+                    <i class="fas fa-chevron-right text-black text-[1.5rem] font-semibold"></i>
+                </div>
+                <div class="swiper-button-prev !w-10 !h-10 !bg-white/20 hover:!bg-white/20 !rounded-full !shadow-md !flex !items-center !justify-center !left-4" style="--swiper-navigation-size: 0;">
+                    <i class="fas fa-chevron-left text-black text-[1.5rem] font-semibold"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Posts -->
+    <section class="mt-[80px]">
+        <div class="container mx-auto px-4 lg:w-[1430px]">
+            <div class="text-center mb-12 lg:w-[1430px] h-[91px]">
+                <h2 class="text-[2.5rem] font-medium text-[#121212] mb-4 mx-auto w-[199px] h-[52px]">News Posts</h2>
+                <p class="text-gray-600 h-[29px] lg:w-[900px] mx-auto">Explore our latest blog posts for helpful tips, trends, and insights on school uniforms, student style, and back-to-school essentials.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="w-full lg:w-[457px]">
+                    <div class="overflow-hidden group relative w-full h-[274px]">
+                        <img src="https://ext.same-assets.com/3662453687/3558283961.webp" alt="Importance of Uniforms" class="rounded-lg w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.3]">
+                    </div>
+                    <div class="mt-[20px]">
+                        <h3 class="font-medium text-[24px] text-gray-800 mb-2">Fashion Trends in Corporate Uniforms for 2025</h3>
+                        <a href="#" class="w-[132px] h-[49px] flex items-center justify-center text-gray-800 border border-black rounded-md relative overflow-hidden group">
+                            <span class="relative z-10 flex items-center group-hover:text-white transition-colors duration-300">
+                                Read More
+                                <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                            </span>
+                            <div class="absolute inset-0 bg-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-[457px]">
+                    <div class="overflow-hidden group relative w-full h-[274px]">
+                        <img src="https://ext.same-assets.com/3662453687/3558283961.webp" alt="Importance of Uniforms" class="rounded-lg w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.3]">
+                    </div>
+                    <div class="mt-[20px]">
+                        <h3 class="font-medium text-[24px] text-gray-800 mb-2">Fashion Trends in Corporate Uniforms</h3>
+                        <a href="#" class="w-[132px] h-[49px] flex items-center justify-center text-gray-800 border border-black rounded-md relative overflow-hidden group">
+                            <span class="relative z-10 flex items-center group-hover:text-white transition-colors duration-300">
+                                Read More
+                                <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                            </span>
+                            <div class="absolute inset-0 bg-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-[457px]">
+                    <div class="overflow-hidden group relative w-full h-[274px]">
+                        <img src="https://ext.same-assets.com/3662453687/3558283961.webp" alt="Importance of Uniforms" class="rounded-lg w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.3]">
+                    </div>
+                    <div class="mt-[20px]">
+                        <h3 class="font-medium text-[24px] text-gray-800 mb-2">Fashion Trends in Corporate Uniforms for 2025</h3>
+                        <a href="#" class="w-[132px] h-[49px] flex items-center justify-center text-gray-800 border border-black rounded-md relative overflow-hidden group">
+                            <span class="relative z-10 flex items-center group-hover:text-white transition-colors duration-300">
+                                Read More
+                                <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                            </span>
+                            <div class="absolute inset-0 bg-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#333333] mt-[6.875rem] pb-[1.5rem] text-white">
+        <div class="container mx-auto px-4 max-w-[89.375rem]">
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-12 pt-[5.625rem]">
+
+                <div class="lg:col-span-4">
+                    <h3 class="font-semibold mb-4">Company Information</h3>
+                    <div class="space-y-6 text-sm text-gray-300">
+                        <a href="#" class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> 70 Washington Square, New York NY 10012, USA</a>
+                        <a href="#" class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> 150 Montague St, Brooklyn, NY 11201, USA</a>
+                        <a href="#" class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> 350 5th Ave, New York, NY 10118, USA</a>
+                        <a href="#" class="flex items-center"><i class="fas fa-envelope mr-2"></i> maverickdresses@gmail.com</a>
+                        <a href="#" class="flex items-center"><i class="fas fa-phone mr-2"></i> Phone: 0812665001</a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <h3 class="font-semibold mb-4">Quick Links</h3>
+                    <div class="space-y-6 text-[0.9375rem] text-gray-300">
+                        <p><a href="#" class="hover:text-white">Policies</a></p>
+                        <p><a href="#" class="hover:text-white">FAQ</a></p>
+                        <p><a href="#" class="hover:text-white">Careers</a></p>
+                        <p><a href="#" class="hover:text-white">Sitemap</a></p>
+                        <p><a href="#" class="hover:text-white">Partners</a></p>
+                        <p><a href="#" class="hover:text-white">Contact Us</a></p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-3">
+                    <h3 class="font-semibold mb-4">Social Media</h3>
+                    <div class="flex space-x-6">
+                        <a href="#" class="w-[3rem] h-[3rem] rounded-full bg-[#FFFFFF1A] flex items-center justify-center text-gray-300 hover:text-white hover:bg-gray-600 text-2xl transition-all duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-[3rem] h-[3rem] rounded-full bg-[#FFFFFF1A] flex items-center justify-center text-gray-300 hover:text-white hover:bg-gray-600 text-2xl transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-[3rem] h-[3rem] rounded-full bg-[#FFFFFF1A] flex items-center justify-center text-gray-300 hover:text-white hover:bg-gray-600 text-2xl transition-all duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-[3rem] h-[3rem] rounded-full bg-[#FFFFFF1A] flex items-center justify-center text-gray-300 hover:text-white hover:bg-gray-600 text-2xl transition-all duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-3">
+                    <h3 class="font-semibold mb-4">Sign Up for Email</h3>
+                    <p class="text-sm text-gray-300 mb-4">Subscribe to our newsletter to receive regular updates and exclusive offers</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Enter Your Email" class="w-[11.4375rem] h-[3.0625rem] px-3 py-2 bg-gray-700 text-white rounded-l border-none outline-none mr-4 text-center">
+                        <button class="bg-white text-black uppercase px-4 py-2 rounded-md hover:bg-gray-500 hover:text-white w-[7.5rem] h-[3.0625rem] flex items-center justify-center transition-all duration-300 transform hover:scale-105">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8">
+                <div class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+                    <p class="text-sm text-gray-300">© 2025, Team 02 FPT Aptech Vietnam</p>
+                    <div class="flex space-x-3">
+                        <img src="https://project3.htuanqn.id.vn/assets/icon/visa.svg" alt="Visa" class="h-[1.5rem]">
+                        <img src="https://project3.htuanqn.id.vn/assets/icon/mastercard.svg" alt="Mastercard" class="h-[1.5rem]">
+                        <img src="https://project3.htuanqn.id.vn/assets/icon/amex.svg" alt="Amex" class="h-[1.5rem]">
+                        <img src="https://project3.htuanqn.id.vn/assets/icon/paypal.svg" alt="PayPal" class="h-[1.5rem]">
+                        <img src="https://project3.htuanqn.id.vn/assets/icon/diners.svg" alt="Diners" class="h-[1.5rem]">
+                        <img src="https://project3.htuanqn.id.vn/assets/icon/discover.svg" alt="Discover" class="h-[1.5rem]">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.hero-slider', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                bulletClass: 'swiper-pagination-bullet !w-3 !h-3 !bg-white/80 !rounded-full !transition-all !cursor-pointer',
+                bulletActiveClass: '!bg-white !opacity-100'
+            },
+            effect: 'slide',
+            speed: 800,
+            grabCursor: true,
+            resistance: true,
+            resistanceRatio: 0.8,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true
+            }
+        });
+    </script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'marquee': 'marquee 25s linear infinite',
+                    },
+                    keyframes: {
+                        marquee: {
+                            '0%': { transform: 'translateX(100%)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+    <script>
+    function playVideo() {
+        const player = document.getElementById('youtubePlayer');
+        const iframe = player.querySelector('iframe');
+        iframe.src = "https://www.youtube.com/embed/aPAp0h9FD1w?autoplay=1";
+        player.classList.remove('hidden');
+    }
+    </script>
+    <script>
+        const testimonialSwiper = new Swiper('.testimonial-slider', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                }
+            }
+        });
+    </script>
+    <script>
+        function toggleSubmenu(button) {
+            const submenu = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            if (submenu.classList.contains('hidden')) {
+                // Show submenu
+                submenu.classList.remove('hidden');
+                setTimeout(() => {
+                    submenu.classList.remove('translate-x-full');
+                    icon.classList.add('rotate-45');
+                }, 10);
+            } else {
+                // Hide submenu immediately
+                submenu.classList.add('hidden');
+                submenu.classList.add('translate-x-full');
+                icon.classList.remove('rotate-45');
+            }
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const menuContent = document.getElementById('mobileMenuContent');
+            
+            if (menu.classList.contains('hidden')) {
+                // Opening menu
+                menu.classList.remove('hidden');
+                setTimeout(() => {
+                    menuContent.classList.add('translate-x-0');
+                    menuContent.classList.remove('-translate-x-full');
+                }, 1);
+            } else {
+                // Closing menu
+                menuContent.classList.remove('translate-x-0');
+                menuContent.classList.add('-translate-x-full');
+                setTimeout(() => {
+                    menu.classList.add('hidden');
+                }, 300);
+            }
+        }
+
+        // Close mobile menu when clicking outside
+        document.getElementById('mobileMenu').addEventListener('click', function(e) {
+            if (e.target === this) {
+                toggleMobileMenu();
+            }
+        });
+    </script>
+</body>
+</html>
